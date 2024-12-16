@@ -1,0 +1,30 @@
+<?php
+
+$corps = <<<EOT
+<form enctype="multipart/form-data" action={$url} method="POST">
+  <ul>
+    <li>
+      <label for="nom">Nom&nbsp;:</label>
+      <input type="text" id="nom" name="nom" value="{$data["nom"]}">
+      <br><span class="error-span">{$error["nom"]}</span>
+    </li>
+    <li>
+      <label for="espece">Espece&nbsp;:</label>
+      <input type="text" id="espece" name="espece" value="{$data["espece"]}">
+      <br><span class="error-span">{$error["espece"]}</span>
+    </li>
+    <li>
+      <label for="age">Age&nbsp;:</label>
+      <input type="number" id="age" name="age" value="{$data["age"]}">
+      <br><span class="error-span">{$error["age"]}</span>
+    </li>
+    <li>
+      <input type="file" name="image">
+      <br><span class="error-span">{$error["image"]}</span>
+    </li>
+  </ul>
+  <input type="submit" value="Valider">
+</form>
+EOT;
+
+?>

@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+  <head>
+    <title><?php echo $this->title; ?></title>
+    <meta name="author" content="Florian Pépin & Tom David">
+    <link rel="stylesheet" href="../src/style/styles.css">
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <p><?php echo $this->feedback; ?></p>
+    <ul><?php foreach($this->menu as $key => $value){echo "<li> <a href=\"$key\">$value</a></li>";}?></ul>
+    <h1><?php echo $this->title; ?></h1>
+    <div><?php echo $this->content; ?></div>
+  </body>
+</html>
